@@ -69,6 +69,30 @@ I reviewed the remaining NULL values and identified rows and columns that did no
 
 Unnecessary data was removed, including the temporary `row_num` column that had been created during the duplicate-removal process.
 
+**Project Screenshots**:
+
+Original Dataset
+
+The original dataset contained several data-quality issues, including duplicate records, inconsistent values, blank fields, and incorrect date formatting.
+
+
+
+Identifying Duplicate Records
+
+I used a CTE and the ROW_NUMBER() window function to identify duplicate records before removing them.
+
+
+
+Standardising Data
+
+I used SQL functions and statements including TRIM(), UPDATE, STR_TO_DATE(), and ALTER TABLE to standardise and correct inconsistent data.
+
+
+
+Final Cleaned Dataset
+
+After completing the cleaning process, the dataset was left in a cleaner and more consistent format for further analysis.
+
 ## SQL Concepts Practised
 
 Through this project, I practised:
